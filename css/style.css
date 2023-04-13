@@ -34,7 +34,44 @@ header nav{
 }
 
 nav.mobile-menu{
+    cursor: pointer;
     display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/menu.png);
+    background-size: 100% 100%;
+}
+
+nav.mobile-menu:hover ul{
+    opacity: 1;
+}
+
+nav.mobile-menu ul{
+    opacity: 0;
+    transition: 1s;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    color: white;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav.mobile-menu ul li{
+    padding: 8px 0;
+    transition: 0.4s;
+    border-bottom: 1px solid black;
+}
+
+nav.mobile-menu ul li:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+nav.mobile-menu ul li a{
+    text-decoration: none;
+    color: black;
 }
 
 header .logo{
@@ -62,6 +99,7 @@ div.call-1{
     float: right;
     margin: 140px 140px;
     max-width: 600px;
+
 }
 
 div.call-1 h2{
@@ -95,6 +133,7 @@ div.text-section1{
     margin-top: 60px;
     padding-left: 80px;
     color: white;
+
 }
 
 div.text-section1 h2{
@@ -108,7 +147,8 @@ div.text-section1 p{
 }
 
 div.text-section1 ul{
-    list-style-position: inside;
+    list-style-position: outside;
+    padding-left: 15px;
     font-size: 15px;
 }
 
