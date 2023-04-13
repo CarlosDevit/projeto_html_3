@@ -9,6 +9,11 @@ html, body{
     height: 100%;
 }
 
+.container{
+	max-width: 1280px;
+	margin:0 auto;
+}
+
 .clear{
     clear: both;
 }
@@ -16,7 +21,7 @@ html, body{
 header{
     width: 100%;
     height: 90vh;
-    padding: 40px 10%;
+    padding: 40px 2%;
     /*max-height: 700px;*/
     background-size: cover;
     background-position: center;
@@ -28,6 +33,10 @@ header nav{
     float:right
 }
 
+nav.mobile-menu{
+    display: none;
+}
+
 header .logo{
     float: left;
     width: 160px;
@@ -35,16 +44,16 @@ header .logo{
     background-color: #ccc;
 }
 
-header nav ul{
+header nav.desktop-menu ul{
     list-style-type: none;
 }
 
-header nav li{
+header nav.desktop-menu li{
     float: left;
     padding: 0 20px;
 }
 
-header nav ul a{
+header nav.desktop-menu ul a{
     text-decoration: none;
     color: white;
 }
@@ -52,11 +61,11 @@ header nav ul a{
 div.call-1{
     float: right;
     margin: 140px 140px;
-    max-width: 1000px;
+    max-width: 600px;
 }
 
 div.call-1 h2{
-    font-size: 60px;
+    font-size: 40px;
     color: white;
     font-weight: lighter;
 }
@@ -68,56 +77,139 @@ div.call-1 p{
 }
 
 section.section1 .container{
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 section.section1{
     width: 100%;
     background-color: #472562;
-    padding: 20px 2%;
+    padding: 0 2%;
+    height: 400px;
 }
 
 div.text-section1{
     float: left;
+    width: 50%;
+    position: relative;
+    left: 55px;
+    margin-top: 60px;
+    padding-left: 80px;
     color: white;
 }
 
 div.text-section1 h2{
+    font-size: 22px;
     font-weight: lighter;
 }
 
 div.text-section1 p{
     margin-top: 20px;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 div.text-section1 ul{
-    list-style-type: inside;
-    font-size: 13px;
+    list-style-position: inside;
+    font-size: 15px;
 }
 
 div.text-section1 ul li{
     float: left;
     width: 100%;
+    margin-top: 8px;
 }
 
 div.button1-text{
     background-color: #ff703d;
     width: 165px;
     height: 44px;
+    font-size: 13px;
+    margin-top: 30px;
     color: white;
     cursor: pointer;
-    margin-top: 10px;
     text-align: center;
     line-height: 44px;
     border-radius: 30px;
+
 }
 
 div.device-section1{
     float: left;
     width: 50%;
-    height: 300px;
+    position: relative;
+    top: -30px;
+    height: 430px;
     background-image: url('../images/device.png');
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% 100%;
+}
+
+@media screen and (max-width: 975px) {
+
+    header{
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+        padding: 40px 2%;}
+
+    nav.desktop-menu{
+        display: none;
+    }
+    nav.mobile-menu{
+        display: block;
+    }
+
+    div.call-1{
+        float: none;
+        margin: 100px 0;
+        max-width: none;
+        width: 100%;
+        text-align: center;
+    }
+   
+    div.call-1 h2{
+        font-size: 40px;
+        color: white;
+        padding: 0 10px;
+        font-weight: lighter;
+    }
+    
+    div.call-1 p{
+        font-size: 15px;
+        color: white;
+        margin-top: 15px ;
+    }
+
+    section.section1{
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    div.text-section1{
+        width: 100%;
+        margin-top: 0;
+        float: none;
+        padding-left: 0;
+        position: static;
+        display: inline-block;
+    }
+
+    div.button1-text{
+        display: inline-block;
+    }
+
+    div.text-section1 ul{
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    div.text-section1 ul li{
+        float: none;
+        text-align: left;
+    }
+
+    div.device-section1{
+        display: none;
+    }
+    
 }
