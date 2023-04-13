@@ -17,10 +17,11 @@ header{
     width: 100%;
     height: 90vh;
     padding: 40px 10%;
-    max-height: 700px;
+    /*max-height: 700px;*/
     background-size: cover;
     background-position: center;
     background-image: url('../images/capa.png');
+    font-weight: lighter;
 }
 
 header nav{
@@ -51,7 +52,7 @@ header nav ul a{
 div.call-1{
     float: right;
     margin: 140px 140px;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 div.call-1 h2{
@@ -64,4 +65,59 @@ div.call-1 p{
     font-size: 15px;
     color: white;
     margin-top: 15px ;
+}
+
+section.section1 .container{
+    max-width: 800px;
+}
+
+section.section1{
+    width: 100%;
+    background-color: #472562;
+    padding: 20px 2%;
+}
+
+div.text-section1{
+    float: left;
+    color: white;
+}
+
+div.text-section1 h2{
+    font-weight: lighter;
+}
+
+div.text-section1 p{
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+div.text-section1 ul{
+    list-style-type: inside;
+    font-size: 13px;
+}
+
+div.text-section1 ul li{
+    float: left;
+    width: 100%;
+}
+
+div.button1-text{
+    background-color: #ff703d;
+    width: 165px;
+    height: 44px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 30px;
+}
+
+div.device-section1{
+    float: left;
+    width: 50%;
+    height: 300px;
+    background-image: url('../images/device.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
