@@ -1,24 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
-html, body{
+html,
+body {
     height: 100%;
 }
 
-.container{
-	max-width: 1280px;
-	margin:0 auto;
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
-.clear{
+.clear {
     clear: both;
 }
 
-header{
+header {
     width: 100%;
     height: 90vh;
     min-height: 800px;
@@ -30,11 +31,11 @@ header{
     font-weight: lighter;
 }
 
-header nav{
-    float:right
+header nav {
+    float: right
 }
 
-nav.mobile-menu{
+nav.mobile-menu {
     cursor: pointer;
     display: none;
     width: 32px;
@@ -43,11 +44,11 @@ nav.mobile-menu{
     background-size: 100% 100%;
 }
 
-nav.mobile-menu:hover ul{
+nav.mobile-menu:hover ul {
     opacity: 1;
 }
 
-nav.mobile-menu ul{
+nav.mobile-menu ul {
     opacity: 0;
     transition: 1s;
     background-color: white;
@@ -60,74 +61,74 @@ nav.mobile-menu ul{
     text-align: center;
 }
 
-nav.mobile-menu ul li{
+nav.mobile-menu ul li {
     padding: 8px 0;
     transition: 0.4s;
     border-bottom: 1px solid black;
 }
 
-nav.mobile-menu ul li:hover{
+nav.mobile-menu ul li:hover {
     background-color: rgb(230, 230, 230);
 }
 
-nav.mobile-menu ul li a{
+nav.mobile-menu ul li a {
     text-decoration: none;
     color: black;
 }
 
-header .logo{
+header .logo {
     float: left;
     width: 160px;
     height: 40px;
     background-color: #ccc;
 }
 
-header nav.desktop-menu ul{
+header nav.desktop-menu ul {
     list-style-type: none;
 }
 
-header nav.desktop-menu li{
+header nav.desktop-menu li {
     float: left;
     padding: 0 20px;
 }
 
-header nav.desktop-menu ul a{
+header nav.desktop-menu ul a {
     text-decoration: none;
     color: white;
 }
 
-div.call-1{
+div.call-1 {
     float: right;
     margin: 140px 140px;
     max-width: 600px;
 
 }
 
-div.call-1 h2{
+div.call-1 h2 {
     font-size: 40px;
     color: white;
     font-weight: lighter;
 }
 
-div.call-1 p{
+div.call-1 p {
     font-size: 15px;
     color: white;
-    margin-top: 15px ;
+    margin-top: 15px;
 }
 
-section.section1 .container{
+section.section1 .container {
     max-width: 1000px;
     height: calc(100% + 30px);
 }
 
-section.section1{
+section.section1 {
     width: 100%;
     background-color: #472562;
     padding: 0 2%;
     height: 400px;
 }
 
-div.text-section1{
+div.text-section1 {
     float: left;
     width: 50%;
     position: relative;
@@ -138,29 +139,29 @@ div.text-section1{
 
 }
 
-div.text-section1 h2{
+div.text-section1 h2 {
     font-size: 22px;
     font-weight: lighter;
 }
 
-div.text-section1 p{
+div.text-section1 p {
     margin-top: 20px;
     font-size: 15px;
 }
 
-div.text-section1 ul{
+div.text-section1 ul {
     list-style-position: outside;
     padding-left: 15px;
     font-size: 15px;
 }
 
-div.text-section1 ul li{
+div.text-section1 ul li {
     float: left;
     width: 100%;
     margin-top: 8px;
 }
 
-div.button1-text{
+div.button1-text {
     background-color: #ff703d;
     width: 165px;
     height: 44px;
@@ -174,7 +175,7 @@ div.button1-text{
 
 }
 
-div.device-section1{
+div.device-section1 {
     float: left;
     width: 50%;
     position: relative;
@@ -185,78 +186,197 @@ div.device-section1{
     background-size: 100% 100%;
 }
 
-section.section2{
+section.section2 {
     padding-left: 2%;
     padding-right: 2%;
     background-color: white;
     text-align: center;
 }
 
-section.section2 .container{
+section.section2 .container {
     max-width: 1000px;
 }
 
-section.section2 h2{
+section.section2 h2 {
     color: #472663;
     font-weight: lighter;
 }
 
-section.section2 p{
+section.section2 p {
     margin-top: 30px;
     max-width: 900px;
     display: inline-block;
 }
 
-section.section2 img{
+section.section2 img {
+    position: relative;
+    top: 70px;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 10px;
+}
+
+section.section3 {
+    width: 100%;
+}
+
+div.part1 {
+    color: white;
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background-color: #835fa7;
+
+}
+
+div.wraper-part1 {
+    max-width: 600px;
+    float: right;
+    padding-right: 30px;
+}
+
+div.part1 h2 {
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 23px;
+    padding: 2%;
+
+}
+
+div.part1 p {
+    font-size: 15px;
+    line-height: 35px;
+    margin-top: 10px;
+    padding: 2%;
+}
+
+div.part2 {
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background: white;
+
+}
+
+div.upon-author {
+    float: left;
+    max-width: 600px;
+    padding-left: 30px;
+
+}
+
+div.title-author {
+    float: left;
+    width: 100%;
+}
+
+div.wraper-title-author{
+    float: left;
+}
+
+div.title-author h2 {
+    padding-right: 20px;
+    color: #232323;
+    font-weight: 400;
+    font-size: 21px;
+}
+
+div.title-author p{
+    font-size: 13px;
+    color:#232323;
+    font-style: italic;
+    font-weight: lighter;
+
+}
+
+div.title-author .img-author {
+    float: left;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -4px;
+    border-radius: 20px;
+    background-color: gray;
+}
+
+div.text-author{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+div.text-author p{
+    color: #232323;
+    font-size: 15px;
+
+}
+
+div.slider-bullets{
+    float: left;
+    margin-top: 12px;
+    padding-left: 30px;
+    width: 100%;
+}
+
+div.slider-bullets span{
+    width: 16px;
+    height: 16px;
+    float: left;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-right: 8px;
+    background-color: rgb(200, 200, 200);
+}
+div.slider-bullets span:hover{
+    background-color: black;
 }
 
 /*---MEDIA QUERIES---*/
 
 @media screen and (max-width: 975px) {
 
-    header{
+    header {
         width: 100%;
         height: auto;
         min-height: 90vh;
-        padding: 40px 2%;}
+        padding: 40px 2%;
+    }
 
-    nav.desktop-menu{
+    nav.desktop-menu {
         display: none;
     }
-    nav.mobile-menu{
+
+    nav.mobile-menu {
         display: block;
     }
 
-    div.call-1{
+    div.call-1 {
         float: none;
         margin: 170px 0;
         max-width: none;
         width: 100%;
         text-align: center;
     }
-   
-    div.call-1 h2{
+
+    div.call-1 h2 {
         font-size: 40px;
         color: white;
         padding: 0 10px;
         font-weight: lighter;
     }
-    
-    div.call-1 p{
+
+    div.call-1 p {
         font-size: 15px;
         color: white;
-        margin-top: 15px ;
+        margin-top: 15px;
     }
 
-    section.section1{
+    section.section1 {
         padding: 40px 2%;
         height: auto;
         text-align: center;
     }
 
-    div.text-section1{
+    div.text-section1 {
         width: 100%;
         margin-top: 0;
         float: none;
@@ -265,25 +385,25 @@ section.section2 img{
         display: inline-block;
     }
 
-    div.button1-text{
+    div.button1-text {
         display: inline-block;
     }
 
-    div.text-section1 ul{
+    div.text-section1 ul {
         display: inline-block;
         margin-top: 20px;
     }
 
-    div.text-section1 ul li{
+    div.text-section1 ul li {
         float: none;
         text-align: left;
     }
 
-    div.device-section1{
+    div.device-section1 {
         display: none;
     }
-    
-    section.section2{
+
+    section.section2 {
         padding: 40px 2%;
     }
 }
