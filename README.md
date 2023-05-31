@@ -6,4 +6,4 @@ Projeto salvo para futuras pesquisas
 
 Foco em Front-End
 
-Linguagens HTML, CSS
+Linguagens HTML, CSS e JavaScript
