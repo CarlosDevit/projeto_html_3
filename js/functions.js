@@ -29,12 +29,11 @@ window.onload = function () {
             google.maps.event.addListener(marker, 'click', function () {
                 infoWindow.open(map, marker);
             });
-        } else if (click == false){
+        } else if (click == false) {
             infoWindow.open(map, marker);
         } else {
             infoWindow.open(map, marker);
         }
-
 
     }
 
@@ -43,4 +42,9 @@ window.onload = function () {
     var conteudo = '<p style="color: black; font-size: 13px; padding: 10px 2%; text-align: center;' +
         'border-bottom:1px solid black;">Meu Endereço!</p>'
     addMarker(-23.403212386823512, -46.46457335077987, "http://maps.google.com/mapfiles/ms/icons/red-dot.png", conteudo, true);
+
+    setTimeout(function () {
+        map.panTo({ 'lat': -23.454338, 'lng': -46.533669 });
+        map.setZoom(15);
+    }, 4000);
 }
